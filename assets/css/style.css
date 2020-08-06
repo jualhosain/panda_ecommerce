@@ -1,0 +1,470 @@
+@media  (max-width: 576px),(min-width: 576px) {
+  navbar{
+    flex-direction: column;
+  }
+  .search{
+    margin: 10px 0 ;
+    width: 100%!important;
+  }
+
+  .banner_img{
+    order: -1;
+  }
+
+  .banner_text{
+    text-align: center;
+   }
+   .banner_text button{
+     margin: auto;
+   }
+
+   .input{
+     width: 90%!important;
+   }
+
+   #banner .banner_img img{
+     width: 100%;
+     height: auto;
+   }
+
+
+}
+
+@media (min-width: 904px) {
+  navbar{
+    flex-direction: row;
+  } 
+      .search {
+        max-width: 380px;
+        position: relative;
+        margin: 0;
+    }
+
+    .banner_img{
+      order: 0;
+    }
+
+    .banner_text{
+      text-align: left;
+     }
+     .banner_text button{
+       margin: 0;
+     }
+
+
+}
+@media (min-width: 1150px) { 
+  .search {
+    max-width: 600px;
+    position: relative;
+}
+ }
+
+
+
+
+
+:root {
+  --pink-light: #FF589B;
+  --pink-deep: #FF136F;
+  --yellow-light: #FFD019;
+  --yellow-deep: #FF9C35;
+  --blue-light: #4289FF;
+  --blue-deep: #3F07F8;
+  --primary: #1F1F1F;
+  --secondary: #707070;
+  --section-bg: #F8F8F8;
+  --banner-bg: #FEEAE9;
+  --search-fill: hsl(0deg 0% 95%);
+  --light-search: #b4b4b4;
+}
+
+/* ******* Global Area ******  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family:Poppins, Arial, Helvetica, sans-serif;
+  width: 96%;
+  margin: auto;
+}
+.container{
+  width: 100%;
+  max-width: 1140px;
+  margin: auto;
+}
+
+a{
+  text-decoration: none;;
+}
+section {
+  padding: 4rem 0;
+  /* margin: 1rem; */
+}
+
+
+.title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title h3 {
+    color: var(--primary);
+    font-weight: 500;
+    font-size: 30px;
+    margin-bottom: 1.5rem;
+}
+
+/* *********** global end *********/
+/* *********** Navbar start *********/
+header {
+    margin-bottom: 2.5rem;
+}
+.menu ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: var(--secondary);
+    font-weight: 400;
+    font-size: .95rem;
+}
+
+.menu ul li {
+    margin:  0 0.4rem;
+}
+
+navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2.5rem 0;
+}
+
+.search {width: 600px;position: relative;}
+
+.search input {
+    padding: 11px 36px 11px 21px;
+    width: 100%;
+    border-radius: 32px;
+    background: var(--search-fill);
+    border: none;
+}
+
+.search i {
+    position: absolute;
+    top: 13px;
+    right: 21px;
+    color: var(--light-search);
+}
+
+.search input:focus{
+    outline:none;
+}
+
+
+.search input::placeholder{
+  font-style: italic;
+  color: var(--light-search);
+}
+
+.logo img {
+  width: 100%;
+}
+
+.logo {
+  width: 178px;
+}
+
+/* *********** Navbar end *********/
+/* *********** Banner Start *********/
+
+div#banner {
+    display: flex;
+    flex-wrap: wrap;
+    background: var(--banner-bg);
+    border-radius: 17px;
+    padding: 32px 51px;
+}
+
+div#banner .banner_img , .banner_text {
+    flex-basis: 250px;
+    flex-grow: 1;
+}
+
+.banner_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 34px;
+}
+
+.banner_text button {
+    width: 112px;
+    height: 39px;
+    background: var(--pink-deep);
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+.banner_text button i {
+    margin-left: 8px;
+}  
+
+.banner_text .price {
+    font-size: 1.7rem;
+    padding: 16px 0;
+    color: var(--pink-deep);
+}
+.banner_text h1 {
+  margin-bottom: 22px;
+  font-weight: 400;
+}
+.banner_text p {
+    color: var(--secondary);
+    font-size: 14px;
+}
+
+.banner_img img {
+  height: 93%;
+}
+
+.banner_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/**************** banner end *******************/
+
+/************** Categories start ***************/
+
+
+.categories_items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+    background: var(--pink-light);
+    flex-basis: 335px;
+    flex-grow: 1;
+    border-radius: 13px;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 18px;
+    justify-content: space-around;
+    margin:5px 15px;
+}
+
+.card:nth-last-child(1){
+  margin:5px 15px;
+}
+
+.text {
+    font-size: 30px;
+    color: white;
+    font-weight: 500;
+}
+
+.See_all p {
+    font-size: 22px;
+    color: var(--yellow-deep);
+}
+
+/********* shoes section start*********/
+
+section#shoes {
+    background: var(--section-bg);
+}
+
+.shoes_items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.shoes_card {
+    background: white;
+    margin: 8px 12px;
+    border-radius: 15px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 331px;
+}
+
+.shoes_img img {
+    width: 100%;
+}
+
+.shoes_text {
+    text-align: center;
+}
+
+.shoes_card button {
+    background: black;
+    color: white;
+    font-size: 18px;
+    padding: 10px 14px;
+    border-radius: 9px;
+    border: 0;
+    margin: 11px 0;
+}
+
+.shoes_card button i {
+    margin-left: .5rem;
+}
+
+.shoes_text .shoes_price p {
+    font-size: 22px;
+}
+
+.shoes_text > p {
+    margin-bottom: 1rem;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 27px;
+}
+
+.shoes_text h4 {
+    margin-bottom: 1rem;
+    font-size: 23px;
+    font-weight: 500;
+    color: var(--primary);
+}
+
+
+
+/********** shoes end***********/
+/********** backpack start***********/
+
+
+section#backpack {
+  background: var(--section-bg);
+}
+
+.backpack_items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.backpack_card {
+  background: white;
+  margin: 8px 12px;
+  border-radius: 15px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 331px;
+}
+
+.backpack_img img {
+  width: 100%;
+}
+
+.backpack_text {
+  text-align: center;
+}
+
+.backpack_card button {
+  background: black;
+  color: white;
+  font-size: 18px;
+  padding: 10px 14px;
+  border-radius: 9px;
+  border: 0;
+  margin: 11px 0;
+}
+
+.backpack_card button i {
+  margin-left: .5rem;
+}
+
+.backpack_text .backpack_price p {
+  font-size: 22px;
+}
+
+.backpack_text > p {
+  margin-bottom: 1rem;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 27px;
+}
+
+.backpack_text h4 {
+  margin-bottom: 1rem;
+  font-size: 23px;
+  font-weight: 500;
+  color: var(--primary);
+}
+
+/****** backpack end *****/
+/************* subscription start ****************/
+section#subscription{
+  padding: 4rem 0;
+}
+
+.boxSub{
+  width: 100%;
+  background: var(--banner-bg);
+  text-align: center;
+  border-radius: 10px;
+  padding: 5rem 0;
+}
+
+.boxSub h2{
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.boxSub p{
+  font-size: 18px;
+  font-weight: 300;
+  color: var(--secondary);
+  margin-bottom: 40px;
+}
+
+.input{
+  width: 700px;
+  margin:0 auto;
+  display: flex;
+  border-radius: 5px;
+  border: none;
+  overflow: hidden;
+}
+
+.input input{
+  width: 75%;
+  padding: 25px 15px; 
+  border: none;
+}
+.input input:focus{
+  outline: none;
+}
+
+.input input::placeholder{
+  font-size: 20px;
+  font-family: Poppins;
+  font-weight: 200;
+}
+
+.input button{
+  width: 25%;
+  border: none;
+  font-size: 22px;
+  font-weight: 500;
+  color: white;
+  background: linear-gradient(to bottom, var(--pink-light), var(--pink-deep));
+}
+
