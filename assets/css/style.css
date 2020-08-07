@@ -1,68 +1,4 @@
-@media  (max-width: 576px),(min-width: 576px) {
-  navbar{
-    flex-direction: column;
-  }
-  .search{
-    margin: 10px 0 ;
-    width: 100%!important;
-  }
-
-  .banner_img{
-    order: -1;
-  }
-
-  .banner_text{
-    text-align: center;
-   }
-   .banner_text button{
-     margin: auto;
-   }
-
-   .input{
-     width: 90%!important;
-   }
-
-   #banner .banner_img img{
-     width: 100%;
-     height: auto;
-   }
-
-
-}
-
-@media (min-width: 904px) {
-  navbar{
-    flex-direction: row;
-  } 
-      .search {
-        max-width: 380px;
-        position: relative;
-        margin: 0;
-    }
-
-    .banner_img{
-      order: 0;
-    }
-
-    .banner_text{
-      text-align: left;
-     }
-     .banner_text button{
-       margin: 0;
-     }
-
-
-}
-@media (min-width: 1150px) { 
-  .search {
-    max-width: 600px;
-    position: relative;
-}
- }
-
-
-
-
+@import "./responsive.css";
 
 :root {
   --pink-light: #FF589B;
@@ -254,19 +190,27 @@ div#banner .banner_img , .banner_text {
 
 .card {
     display: flex;
-    background: var(--pink-light);
     flex-basis: 335px;
     flex-grow: 1;
     border-radius: 13px;
-    flex-wrap: wrap;
     align-items: center;
     padding: 18px;
     justify-content: space-around;
     margin:5px 15px;
 }
 
+.card img{
+  height: 120px;
+}
+.card:nth-child(1){
+  background: linear-gradient(to right bottom, var(--yellow-deep) , var(--yellow-light));
+}
+.card:nth-child(2){
+  background: linear-gradient(to bottom, var(--pink-light) , var(--pink-light));
+}
 .card:nth-last-child(1){
   margin:5px 15px;
+  background: linear-gradient(to top, var(--blue-deep) , var(--blue-light));
 }
 
 .text {
@@ -303,7 +247,10 @@ section#shoes {
 }
 
 .shoes_img img {
-    width: 100%;
+    height: 217px;
+}
+.shoes_img {
+    text-align: center;
 }
 
 .shoes_text {
