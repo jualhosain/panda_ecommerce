@@ -54,7 +54,7 @@ section {
 }
 
 /* *********** global end *********/
-/* *********** Navbar start *********/
+/* *********** nav start *********/
 header {
     margin-bottom: 2.5rem;
 }
@@ -74,7 +74,7 @@ header {
     margin:  0 0.4rem;
 }
 
-navbar {
+nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -116,7 +116,7 @@ navbar {
   width: 178px;
 }
 
-/* *********** Navbar end *********/
+/* *********** nav end *********/
 /* *********** Banner Start *********/
 
 div#banner {
@@ -415,3 +415,491 @@ section#subscription{
   background: linear-gradient(to bottom, var(--pink-light), var(--pink-deep));
 }
 
+
+
+
+/***************** product page ******************/
+
+section#shoes {
+  background: var(--section-bg);
+}
+
+.shoes_items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.shoes_card {
+  background: white;
+  margin: 8px 12px;
+  border-radius: 15px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 331px;
+}
+
+.shoes_img img {
+  height: 217px;
+}
+.shoes_img {
+  text-align: center;
+}
+
+.shoes_text {
+  text-align: center;
+}
+
+.shoes_card button {
+  background: black;
+  color: white;
+  font-size: 18px;
+  padding: 10px 14px;
+  border-radius: 9px;
+  border: 0;
+  margin: 11px 0;
+}
+
+.shoes_card button i {
+  margin-left: .5rem;
+}
+
+.shoes_text .shoes_price p {
+  font-size: 22px;
+}
+
+.shoes_text > p {
+  margin-bottom: 1rem;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 27px;
+}
+
+.shoes_text h4 {
+  margin-bottom: 1rem;
+  font-size: 23px;
+  font-weight: 500;
+  color: var(--primary);
+}
+
+
+
+/********** shoes end***********/
+/********** backpack start***********/
+
+
+section#all {
+background: var(--section-bg);
+}
+
+.all_items {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+.all_card {margin: 8px 12px;border-radius: 15px;padding: 24px;display: flex;flex-direction: column;flex-basis: 331px;transition: .4s all linear;}
+
+.all_img img {
+width: 100%;
+}
+
+.all_text {
+text-align: center;
+}
+
+.all_card button {
+background: black;
+color: white;
+font-size: 18px;
+padding: 10px 14px;
+border-radius: 9px;
+border: 0;
+margin: 11px 0;
+}
+
+.all_card button i {
+margin-left: .5rem;
+}
+
+.all_text .all_price p {
+font-size: 22px;
+}
+
+.all_text > p {
+margin-bottom: 1rem;
+font-size: 14px;
+font-weight: 400;
+line-height: 27px;
+}
+
+.all_text h4 {
+margin-bottom: 1rem;
+font-size: 23px;
+font-weight: 500;
+color: var(--primary);
+}
+
+
+#all .title{
+  justify-content: center;
+  
+}
+#all .title h3{
+  font-size: 3rem;
+  font-weight:500;
+  color: var(--pink-deep)
+}
+
+
+.all_card:hover{
+    background: white;
+    transform: scale(1.02);
+    box-shadow: 0 0 7px 0.1px #bbbbbb;
+}
+
+
+/**********  about page **************/
+.mission_about {
+    display: flex;
+    background: var(--search-fill);
+    padding: 16px;
+    justify-content: space-between;
+    transition: .3s all linear;
+    flex-wrap: wrap;
+    box-shadow: 0 0 8px 0px rgb(190, 190, 190);
+}
+
+.vision_about {
+    display: flex;
+}
+
+#about>.container {
+    background: #f2f2f2;
+    padding: 40px;
+}
+
+.img_field {flex-basis: 530px; flex-grow: 1; height: 350px;}
+
+.mission_about .img_field img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.mission_about  .text_field {
+    flex-basis: 400px;
+    text-align: right;
+        display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+    margin: 5px 0 15px;
+}
+
+
+.vision_about .img_field img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.vision_about .text_field {
+    flex-basis: 400px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+    margin: 5px 0 15px;
+}
+
+.vision_about {
+  margin-top: 10px;
+  background: var(--search-fill);
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  box-shadow: 0 0 8px 0px rgb(190, 190, 190);
+}
+
+.text_field h2 {
+    font-size: 2rem;
+    padding: 1rem 0;
+    color: var(--primary);
+}
+
+.text_field p {
+    font-size: .8rem;
+    line-height: 1.4rem;
+    color: var(--secondary);
+}
+
+
+/*************** Contact Us **************/
+
+#conact_body{
+  background: var(--pink-deep);
+}
+
+#conact_body nav{
+  background: rgba(255, 255, 255, 0.363);
+}
+
+#conact_body a{
+  color: rgb(51, 51, 51);
+}
+
+
+.formap{
+  width: 100%;
+  height: 500px;
+  background: blue;
+  margin-top:10px ;
+}
+
+
+#conact_body {
+  width: 100%;
+  margin: 0;
+}
+
+.totalWrap{
+  width: 96%;
+  margin: auto;
+}
+
+div#contact {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.forMap {
+    width: 100%;
+    height: 413px;
+}
+
+.contactInfo {position: absolute;width: 522px;background: #dcdcdc;right: 89px;padding: 40px;}
+
+.forMap iframe{
+  width: 100%;
+  height: 100%;
+}
+.contactInfo div {
+    width: 100%;
+    margin: 9px 0;
+}
+
+.contactInfo input {
+    width: 100%;
+    padding: 15px;
+    font-size: .8rem;
+    letter-spacing: 2px;
+    border: none;
+    border-radius: 7px;
+}
+
+.contactInfo textarea:focus{
+  outline:none;
+}
+ .contactInfo input:focus{
+   outline:none;
+ }
+.contactInfo textarea {
+    width: 100%;
+    font-size: 1.3rem;
+    padding: 16px;
+    border: none;
+    border-radius: 10px;
+}
+
+.contactInfo div:nth-child(4) {text-align: center;margin-top: 18px;}
+
+.contactInfo button {
+    padding: 8px 25px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    border: none;
+    color: var(--primary);
+    background: var(--pink-deep);
+}
+.contactInfo h2 {
+    font-size: 2.5rem;
+    text-align: right;
+    margin-bottom: 16px;
+}
+
+.contactInfo form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/******** footer **********/
+.footerWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: var(--banner-bg);
+    padding: 44px;
+    position: relative;
+}
+
+.footLeft, .footright {
+    flex-basis: 420px;
+    padding-left: 15px;
+}
+
+
+.footright {
+    text-align: right;
+}
+
+.line {
+    width: 3px;
+    background: var(--pink-deep);
+}
+
+.footright h2 span {
+    font-weight: 400;
+    font-size: 17px;
+    padding-right: 6px;
+    letter-spacing: 4px;
+}
+
+.footright h2 {
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.footright p {
+    font-size: .77rem;
+    font-weight: 300;
+    color: var(--primary);
+    line-height: 33px;
+    margin-top: 33px;
+}
+
+.footright button {
+    width: 281px;
+    height: 51px;
+    border: none;
+    border-right: 27px solid var(--pink-deep);
+    background: white;
+    font-size: 27px;
+    letter-spacing: 18px;
+    font-weight: 700;
+    color: var(--pink-deep);
+    margin-top: 39px;
+}
+.footright h2 span:nth-last-child(1) {
+    font-weight: 800;
+    font-size: 36px;
+    letter-spacing: 8px;
+    position: relative;
+    z-index: 1;
+}
+
+.footright h2 span:nth-last-child(1)::after{
+    content: '';
+    width: 44px;
+    height: 44px;
+    background: var(--pink-deep);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+
+.footright h2 span:nth-last-child(1)::before{
+    content: '';
+    width: 400px;
+    height: 5px;
+    background: var(--pink-deep);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.boxFoot {
+    background: white;
+    border-radius: 10px;
+    padding: 11px;
+    margin: 9px 0;
+}
+
+.boxFoot h2 {
+    text-align: right;
+    font-size: 1.3rem;
+    font-weight: 400;
+    letter-spacing: 7px;
+}
+
+.boxFoot p {
+    font-size: .7rem;
+    font-weight: 300;
+    line-height: 20px;
+    text-align-last: right;
+}
+
+.boxFoot button {
+    padding: 4px 23px;
+    background: var(--pink-deep);
+    border: none;
+    border-radius: 10px;
+    font-size: 12px;
+    letter-spacing: 8px;
+    font-weight: 600;
+    color: white;
+    margin-left: 11px;
+}
+
+.social {
+    width: 94px;
+    height: 365px;
+    background: var(--pink-deep);
+    position: absolute;
+    bottom: -48px;
+    left: -24px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+    box-shadow: 0 0 6px 1px hsl(337 54% 47% / 1);
+}
+
+.social .box {
+    width: 50px;
+    height: 50px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.craditAre p {
+    text-align: center;
+    padding: 18px;
+    color: var(--primary);
+}
+
+.box i {
+    font-size: 36px;
+    color: var(--pink-deep);
+}
+
+.footLeft{
+  padding-left: 40px;
+}
