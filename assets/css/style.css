@@ -346,6 +346,7 @@ section#backpack {
   font-size: 14px;
   font-weight: 400;
   line-height: 27px;
+  color: var(--secondary);
 }
 
 .backpack_text h4 {
@@ -474,6 +475,7 @@ section#shoes {
   font-size: 14px;
   font-weight: 400;
   line-height: 27px;
+  color: var(--secondary);
 }
 
 .shoes_text h4 {
@@ -527,12 +529,7 @@ margin-left: .5rem;
 font-size: 22px;
 }
 
-.all_text > p {
-margin-bottom: 1rem;
-font-size: 14px;
-font-weight: 400;
-line-height: 27px;
-}
+.all_text > p {margin-bottom: 1rem;font-size: 14px;font-weight: 400;line-height: 27px;color: var(--secondary);}
 
 .all_text h4 {
 margin-bottom: 1rem;
@@ -786,6 +783,7 @@ div#contact {
     color: var(--primary);
     line-height: 33px;
     margin-top: 33px;
+    color: var(--secondary);
 }
 
 .footright button {
@@ -850,6 +848,7 @@ div#contact {
     font-weight: 300;
     line-height: 20px;
     text-align-last: right;
+    color: var(--secondary);
 }
 
 .boxFoot button {
